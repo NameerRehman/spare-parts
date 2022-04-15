@@ -15,7 +15,7 @@ odoo = Odoo()
 login_data = odoo.loadInfo('setup.ini')
 
 #login to odoo
-odoo.authenticate(login_data['user'], login_data['password']) #TODO: replace with username/pw variables
+odoo.authenticate(login_data['user'], login_data['password']) 
 
 #get spare parts order history from odoo
 df_orderhist, df_orderhist_tot = odoo.getOrderHistory()
